@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Images Search</title>
+        <link rel="shortcut icon" type="image/x-icon" href="icon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        #upper_bar {
+            text-align: right;
+            padding-right: 10px;
+            padding-bottom: 15px;
+            padding-top: 10px;
+        }
+        a  {
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        div {
+            text-align: center;
+        }
+        input[type='text'] {
+            font-size: 16px;
+            border: 1px solid #aaa; 
+            border-radius: 20px;
+            width: 460px;
+            height: 35px;
+            outline: none;
+        }
+        .container {
+            padding: 100px
+        }
+        input[type='submit'] {
+            border-radius: 10px;
+            height: 36px;
+            border: 0px solid #609;
+        }
+        input[type=submit]:hover {
+            border: 1px solid #222;
+        }
+        #btn {
+            margin-top: 20px;
+        }
+        #ltxt {
+            text-align: right;
+            width: 700px;
+            padding-bottom: 20px;
+            color: blue;
+            font-size: 24px;
+        }
+    </style>
+    <body>
+            <div id="upper_bar"><a href="index.html">Google Search</a>       &nbsp;           
+                <a href="Advanced.html">Advaced Search</a></div>
+        <hr>
+            <div class="container">
+            <img src="google.png" alt="Google logo" />
+        <div id="ltxt">
+            <span>images</span>
+        </div>
+            <div>
+            <form action="https://google.com/search">
+                <div id="con">
+                  <input type="text" name="q" autocomplete="off" autofocus placeholder="Search">
+                </div>
+                <input type="hidden" name="tbm" value="isch" />
+                <div id="btn">
+                <input type="submit" value="Search">  &nbsp;&nbsp;
+                </div>
+            </form>
+                
+        </div>
+        </div>
+    </body>
+</html>

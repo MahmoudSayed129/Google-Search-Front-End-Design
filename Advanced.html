@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <link rel="shortcut icon" type="image/x-icon" href="icon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        #upper_bar {
+            text-align: right;
+            padding-right: 10px;
+            padding-bottom: 15px;
+            padding-top: 10px;
+        }
+        a  {
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        input[type='text'] {
+            border: 1px solid #aaa;
+            width: 460px;
+            height: 35px;
+            width: 600px;
+            height: 20px;
+        }
+        input[type='text']:focus{
+            border: 1px solid azure;
+            outline: 1px solid dodgerblue;
+        }
+        .container {
+            padding-top: 100px;
+            display: grid;
+            padding: 20px;
+            grid-column-gap:20px;
+            grid-row-gap: 5px;
+            grid-template-columns: 200px 610px ;
+        }
+        input[type='submit'] {
+            height: 30px;
+            border: 0px solid #609;
+            background-color: dodgerblue;
+            color: #fff;
+            text-align: center;
+        }
+        #btn {
+            text-align: right;
+            
+        }
+        .top-left {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+        }
+        #ad {
+            font-size: 26px;
+            text-align: left;
+            color: crimson;
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .text {
+            margin-bottom: 10px;
+            margin-left: 0px;
+            text-align: left;
+        }
+        #num1, #num2 {
+            width: 287px;
+            height: 20px;
+        }
+        #header {
+            margin-bottom: 30px;
+            margin-top: 30px;
+            font-size: 26px;
+            padding-left: 20px;
+        }
+    </style>
+    <body>
+            <div id="upper_bar"><img src="google.png" width="100px" class="top-left"/> <a href="Images.html"> Images Search</a>       &nbsp;           
+                <a href="index.html">Google Search</a></div>
+        <hr>
+        <div id="ad">Advanced Search</div>
+        <hr>
+        <form action="https://google.com/search">
+            <div id="header">Find pages with...</div>
+            <div class="container">
+                <div><label for="as_q">All these words: </label ></div>
+                <div class="text">
+                <input autocomplete="off" type="text" name="as_q"></div>
+                <div><label for="as_epq">This word or phrase in full: </label></div>
+                <div class="text">
+                <input type="text" autocomplete="off" name="as_epq"></div>
+                <div><label for="as_oq">Any of these words: </label></div>
+                <div class="text">
+                <input type="text" autocomplete="off" name="as_oq"></div>
+                <div><label for="as_eq">None of these words: </label></div>
+                <div class="text">
+                <input type="text" autocomplete="off" name="as_eq"></div>
+                <div><label for="as_nlo">The numbers range from: </label></div>
+                <div class="text">
+                <input  type="text" id="num1" autocomplete="off" name="as_nlo"> to
+                <input type="text" id="num2" autocomplete="off" name="as_nhi"></div>
+                <div></div>
+                <div id="btn">
+                <input type="submit" value="Advanced Search">
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
