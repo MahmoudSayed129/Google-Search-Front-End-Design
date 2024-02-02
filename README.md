@@ -1,5 +1,7 @@
-## Project Title: Google Search Front-End Design
+# Google Search Front-End Design
 ## Youtube : https://youtu.be/ch-hfm995-M
+## Demonstration
+Watch the [YouTube video](https://youtu.be/ch-hfm995-M)) to see the application in action.
 
 ### Description
 This project aims to create a front-end interface similar to Google Search, Google Image Search, and Google Advanced Search. It provides users with the ability to perform searches, access image search functionality, utilize advanced search options, and experience the "I'm Feeling Lucky" feature. The project utilizes HTML and CSS to replicate the aesthetics and functionalities of Google's search interface.
